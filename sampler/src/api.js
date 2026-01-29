@@ -1,4 +1,5 @@
-const API_URL = 'http://localhost:3000/api/presets';
+// Production API URL (Render)
+const API_URL = 'https://web-sampler.onrender.com/api/presets';
 
 export const api = {
     async getPresets() {

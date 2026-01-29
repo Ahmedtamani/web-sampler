@@ -619,7 +619,7 @@ export class SamplerComponent extends HTMLElement {
             console.log('Loading preset:', preset.name);
 
             const promises = preset.sounds.map(sound => {
-                const fullUrl = `http://localhost:3000${sound.path}`;
+                const fullUrl = `https://web-sampler.onrender.com${sound.path}`;
                 this.setPadLoading(sound.padId, true);
 
                 return this.engine.loadSample(
